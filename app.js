@@ -1,3 +1,5 @@
+// first section related function 
+
 function updateMemoryAmount (isIncrease){
     const memoryCost = document.getElementById('memory-cost');
    
@@ -27,22 +29,23 @@ document.getElementById('upper-btn').addEventListener('click',function(){
 
 document.getElementById('lower-storage').addEventListener('click',function(){
     const storageCost =document.getElementById('storage-cost');
-    const p=storageCost.innerText;
+    const storage=storageCost.innerText;
     storageCost.innerText=0;
     TotalAmount();
 })
 document.getElementById('upper-storage').addEventListener('click',function(){
     const storageCost =document.getElementById('storage-cost');
-    const p=storageCost.innerText;
+    const storage=storageCost.innerText;
     storageCost.innerText=100;
     TotalAmount();
 })
 document.getElementById('cost-storage').addEventListener('click',function(){
     const storageCost =document.getElementById('storage-cost');
-    const p=storageCost.innerText;
+    conststorage=storageCost.innerText;
     storageCost.innerText=180;
     TotalAmount();
 })
+
 // Third related function 
 
 function deliveryCost (deliveryCost){
@@ -110,7 +113,7 @@ function TotalAmount (){
 
 }
 
-// last part 
+// final total part
     document.getElementById('apply-btn').addEventListener('click',function(){
     const discountInput =document.getElementById('discount-input');
     const finalTotal=document.getElementById('Orginal-total');
